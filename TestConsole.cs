@@ -11,19 +11,19 @@ namespace TestConsole
             try
             {
                 // Test básico - lista vacía en castellano
-                var resultadoVacio = FormaGeometrica.Imprimir(new List<FormaGeometrica>(), FormaGeometrica.Castellano);
+                var resultadoVacio = FormaGeometrica.Imprimir(new List<FormaGeometrica>(), Idioma.Castellano);
                 Console.WriteLine("Test 1 - Lista vacía en castellano:");
                 Console.WriteLine(resultadoVacio);
                 Console.WriteLine();
 
                 // Test básico - lista vacía en inglés
-                var resultadoVacioIngles = FormaGeometrica.Imprimir(new List<FormaGeometrica>(), FormaGeometrica.Ingles);
+                var resultadoVacioIngles = FormaGeometrica.Imprimir(new List<FormaGeometrica>(), Idioma.Ingles);
                 Console.WriteLine("Test 2 - Lista vacía en inglés:");
                 Console.WriteLine(resultadoVacioIngles);
                 Console.WriteLine();
 
                 // Test básico - lista vacía en italiano (nuevo)
-                var resultadoVacioItaliano = FormaGeometrica.Imprimir(new List<FormaGeometrica>(), FormaGeometrica.Italiano);
+                var resultadoVacioItaliano = FormaGeometrica.Imprimir(new List<FormaGeometrica>(), Idioma.Italiano);
                 Console.WriteLine("Test 3 - Lista vacía en italiano:");
                 Console.WriteLine(resultadoVacioItaliano);
                 Console.WriteLine();
@@ -31,23 +31,23 @@ namespace TestConsole
                 // Test con formas
                 var formas = new List<FormaGeometrica>
                 {
-                    new FormaGeometrica(FormaGeometrica.Cuadrado, 5),
-                    new FormaGeometrica(FormaGeometrica.Circulo, 3),
-                    new FormaGeometrica(FormaGeometrica.TrianguloEquilatero, 4),
-                    new FormaGeometrica(FormaGeometrica.Trapecio, 4) // Nuevo trapecio
+                    new FormaGeometrica(TipoForma.Cuadrado, 5),
+                    new FormaGeometrica(TipoForma.Circulo, 3),
+                    new FormaGeometrica(TipoForma.TrianguloEquilatero, 4),
+                    new FormaGeometrica(TipoForma.Trapecio, 4) // Nuevo trapecio
                 };
 
-                var resultadoFormasEsp = FormaGeometrica.Imprimir(formas, FormaGeometrica.Castellano);
+                var resultadoFormasEsp = FormaGeometrica.Imprimir(formas, Idioma.Castellano);
                 Console.WriteLine("Test 4 - Formas en español:");
                 Console.WriteLine(resultadoFormasEsp);
                 Console.WriteLine();
 
-                var resultadoFormasEng = FormaGeometrica.Imprimir(formas, FormaGeometrica.Ingles);
+                var resultadoFormasEng = FormaGeometrica.Imprimir(formas, Idioma.Ingles);
                 Console.WriteLine("Test 5 - Formas en inglés:");
                 Console.WriteLine(resultadoFormasEng);
                 Console.WriteLine();
 
-                var resultadoFormasIta = FormaGeometrica.Imprimir(formas, FormaGeometrica.Italiano);
+                var resultadoFormasIta = FormaGeometrica.Imprimir(formas, Idioma.Italiano);
                 Console.WriteLine("Test 6 - Formas en italiano:");
                 Console.WriteLine(resultadoFormasIta);
                 Console.WriteLine();

@@ -66,4 +66,10 @@ _ReSharper*/
 *.dbmdl
 
 #Test files
-*.testsettings
+*.testsettings  
+# TestConsole outputs (generated files)  
+TestConsole.exe  
+DevelopmentChallenge.Data.dll  
+/en/  
+/es/  
+/it/ 

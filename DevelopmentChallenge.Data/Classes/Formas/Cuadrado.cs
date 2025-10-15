@@ -1,5 +1,3 @@
-using System;
-
 namespace DevelopmentChallenge.Data.Classes.Formas
 {
     /// <summary>
